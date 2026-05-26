@@ -1,0 +1,23 @@
+
+=== Data for report tables ===
+method: opencl
+repeats: 1
+unit: ms
+
+TABLE 1. Average time for each image
+image                 avg_ms
+300x300                 0.89
+400x400                 1.10
+500x500                 1.04
+600x600                 1.10
+950x950                 2.65
+2400x2400              18.82
+
+TABLE 2. Each algorithm separately
+image              invert_ms     median_ms      sobel_ms
+300x300                 0.89          0.93          0.85
+400x400                 1.23          1.16          0.91
+500x500                 1.00          1.25          0.87
+600x600                 1.02          1.12          1.16
+950x950                 1.85          2.19          3.92
+2400x2400              13.74         25.56         17.17

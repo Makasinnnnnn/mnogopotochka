@@ -1,0 +1,113 @@
+Method:  sequential
+Input:   images
+Output:  resultati
+Repeats: 10
+Timing:  PNG loading/saving is not measured.
+
+image (size) | filter | avg_ms | iterations
+300x300.png (300x300) | invert | 2.23 ms | 10
+300x300.png (300x300) | median | 81.40 ms | 10
+300x300.png (300x300) | sobel | 7.78 ms | 10
+400x400.png (400x400) | invert | 2.74 ms | 10
+400x400.png (400x400) | median | 135.85 ms | 10
+400x400.png (400x400) | sobel | 11.49 ms | 10
+500x500.png (500x500) | invert | 4.09 ms | 10
+500x500.png (500x500) | median | 171.25 ms | 10
+500x500.png (500x500) | sobel | 17.35 ms | 10
+600x600.png (600x600) | invert | 6.28 ms | 10
+600x600.png (600x600) | median | 204.39 ms | 10
+600x600.png (600x600) | sobel | 26.08 ms | 10
+950x950.png (950x950) | invert | 15.05 ms | 10
+950x950.png (950x950) | median | 735.82 ms | 10
+950x950.png (950x950) | sobel | 63.68 ms | 10
+2400x2400.png (2400x2400) | invert | 94.16 ms | 10
+2400x2400.png (2400x2400) | median | 4606.33 ms | 10
+2400x2400.png (2400x2400) | sobel | 421.44 ms | 10
+
+
+
+
+Method:  openmp
+Input:   images
+Output:  resultati
+Repeats: 10
+Timing:  PNG loading/saving is not measured.
+OpenMP threads: 16
+
+image (size) | filter | avg_ms | iterations
+300x300.png (300x300) | invert | 0.42 ms | 10
+300x300.png (300x300) | median | 8.80 ms | 10
+300x300.png (300x300) | sobel | 1.21 ms | 10
+400x400.png (400x400) | invert | 0.35 ms | 10
+400x400.png (400x400) | median | 14.88 ms | 10
+400x400.png (400x400) | sobel | 1.73 ms | 10
+500x500.png (500x500) | invert | 0.57 ms | 10
+500x500.png (500x500) | median | 24.04 ms | 10
+500x500.png (500x500) | sobel | 2.21 ms | 10
+600x600.png (600x600) | invert | 0.89 ms | 10
+600x600.png (600x600) | median | 34.94 ms | 10
+600x600.png (600x600) | sobel | 5.15 ms | 10
+950x950.png (950x950) | invert | 3.60 ms | 10
+950x950.png (950x950) | median | 97.16 ms | 10
+950x950.png (950x950) | sobel | 12.99 ms | 10
+2400x2400.png (2400x2400) | invert | 14.47 ms | 10
+2400x2400.png (2400x2400) | median | 523.41 ms | 10
+2400x2400.png (2400x2400) | sobel | 49.30 ms | 10
+
+
+
+
+Method:  simd
+Input:   images
+Output:  resultati
+Repeats: 10
+Timing:  PNG loading/saving is not measured.
+
+image (size) | filter | avg_ms | iterations
+300x300.png (300x300) | invert | 0.16 ms | 10
+300x300.png (300x300) | median | 7.57 ms | 10
+300x300.png (300x300) | sobel | 3.81 ms | 10
+400x400.png (400x400) | invert | 0.39 ms | 10
+400x400.png (400x400) | median | 14.02 ms | 10
+400x400.png (400x400) | sobel | 6.45 ms | 10
+500x500.png (500x500) | invert | 0.39 ms | 10
+500x500.png (500x500) | median | 15.72 ms | 10
+500x500.png (500x500) | sobel | 9.97 ms | 10
+600x600.png (600x600) | invert | 0.54 ms | 10
+600x600.png (600x600) | median | 21.87 ms | 10
+600x600.png (600x600) | sobel | 15.37 ms | 10
+950x950.png (950x950) | invert | 1.32 ms | 10
+950x950.png (950x950) | median | 56.13 ms | 10
+950x950.png (950x950) | sobel | 37.24 ms | 10
+2400x2400.png (2400x2400) | invert | 9.61 ms | 10
+2400x2400.png (2400x2400) | median | 358.64 ms | 10
+2400x2400.png (2400x2400) | sobel | 230.38 ms | 10
+
+
+
+
+Method:  opencl
+Input:   images
+Output:  resultati
+Repeats: 10
+Timing:  PNG loading/saving is not measured. OpenCL first-time init/build is warmed up and not included in average time.
+
+image (size) | filter | avg_ms | iterations
+300x300.png (300x300) | invert | 0.80 ms | 10
+300x300.png (300x300) | median | 0.99 ms | 10
+300x300.png (300x300) | sobel | 0.92 ms | 10
+400x400.png (400x400) | invert | 0.87 ms | 10
+400x400.png (400x400) | median | 1.02 ms | 10
+400x400.png (400x400) | sobel | 0.81 ms | 10
+500x500.png (500x500) | invert | 1.01 ms | 10
+500x500.png (500x500) | median | 1.01 ms | 10
+500x500.png (500x500) | sobel | 1.05 ms | 10
+600x600.png (600x600) | invert | 0.88 ms | 10
+600x600.png (600x600) | median | 1.22 ms | 10
+600x600.png (600x600) | sobel | 1.42 ms | 10
+950x950.png (950x950) | invert | 1.18 ms | 10
+950x950.png (950x950) | median | 1.53 ms | 10
+950x950.png (950x950) | sobel | 1.65 ms | 10
+2400x2400.png (2400x2400) | invert | 17.64 ms | 10
+2400x2400.png (2400x2400) | median | 24.79 ms | 10
+2400x2400.png (2400x2400) | sobel | 25.04 ms | 10
