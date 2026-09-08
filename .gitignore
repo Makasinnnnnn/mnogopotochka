@@ -67,3 +67,11 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+.env*
+.idea/
+.vscode/
+*.pem
+*.key
+*.zip
+backups/
+resultati/
